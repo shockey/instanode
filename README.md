@@ -28,7 +28,8 @@ authentication be-course it is closed API.
 let Instanode = require('instanode');
 
 let instaClient = new Instanode(YOUR_USERNAME, YOUR_PASSWORD);
-instanode.login((err, result) => {
+
+instaClient.login((err, result) => {
     console.log(result); // This is user signature object. Save it for next use without additional login
 });
 ```
